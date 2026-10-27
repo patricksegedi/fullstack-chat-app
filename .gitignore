@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node.js / npm
+node_modules/
+npm-debug.log*
+
+# Vite
+*.local
+
+# Frontend development
+.vite/
+
+# Local environment files
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
