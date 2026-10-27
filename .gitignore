@@ -235,3 +235,6 @@ npm-debug.log*
 
 # macOS
 .DS_Store
+
+# Personal development roadmap
+/DEVELOPMENT_ROADMAP.md
