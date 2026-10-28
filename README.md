@@ -16,8 +16,12 @@ The goal is to design, develop, and deploy a scalable application while gaining 
 - FastAPI
 - Uvicorn
 
+### Database
+- PostgreSQL – Relational database
+- SQLAlchemy – ORM and database access
+- psycopg – PostgreSQL driver
+
 ### Planned Technologies
-- PostgreSQL – Persistent data storage
 - Redis – Caching and real-time messaging infrastructure
 - WebSockets – Real-time communication
 - Docker – Containerization
@@ -44,6 +48,8 @@ chat-app/
 │   │   ├── core/
 │   │   │   ├── config.py
 │   │   │   └── middleware.py
+│   │   ├── db/
+│   │   │   └── session.py
 │   │   └── main.py
 │   └── requirements.txt
 ├── .gitignore
@@ -56,6 +62,17 @@ chat-app/
 - Node.js and npm
 - Python 3.13 or compatible version
 - Git
+- PostgreSQL
+
+### Database Configuration
+
+Create a PostgreSQL database and a dedicated database user.
+
+Create a `.env` file inside `backend/` with the following configuration:
+
+```dotenv
+DATABASE_URL=postgresql+psycopg://chat_app_user@localhost:5432/chat_app_db
+```
 
 ### Start the Backend
 
@@ -93,6 +110,7 @@ Frontend: http://localhost:5173
 - CORS configuration for local development
 - Frontend-to-backend HTTP communication
 - Git and GitHub version control
+- PostgreSQL database connectivity using SQLAlchemy
 
 ## Development Roadmap
 
@@ -116,4 +134,4 @@ Planned features:
 
 ## Project Status
 
-**In development** – Initial development environment and frontend/backend integration completed.
+**In development** – Initial development environment, frontend/backend integration, and PostgreSQL database connectivity completed.
